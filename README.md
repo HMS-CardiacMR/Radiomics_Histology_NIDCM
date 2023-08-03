@@ -22,6 +22,7 @@ Run then Calculate_medoid to determine a single representative feature per clust
 
 Finally, run Create_LG_models.py to create logistic regression models to study the association between each medoid and histological features.
 
+![Figure1](https://github.com/HMS-CardiacMR/Radiomics_Histology_NIDCM/assets/9512423/c4c2cc50-7ee1-4e8b-80bb-3ead622746ae)
 
 ## Abstract
 
