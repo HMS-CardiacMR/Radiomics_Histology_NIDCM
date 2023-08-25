@@ -4,8 +4,6 @@ from radiomics import featureextractor
 
 import numpy as np
 import pandas as pd
-# This function computes the radiomics from a given iamge.
-# code prepared and used in previous lab studies by Hossam ElRoweidy and modified by Amine Amyar
 
 
 def extract_all_radiomics_features(all_img, all_mask,  voxelspacing=None, params=None, manualnormalize=False):

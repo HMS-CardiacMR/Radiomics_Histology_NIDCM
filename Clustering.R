@@ -2,7 +2,7 @@
 library(polycor)
 library(ConsensusClusterPlus)
 
-d <- read.csv("C:\\Users\\aamyar\\OneDrive - Beth Israel Lahey Health\\Desktop\\Amine\\Dendrogram\\Features_selected_ecv_T.csv", header=TRUE)
+d <- read.csv(".csv", header=TRUE)
 head(d)
 
 

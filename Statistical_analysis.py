@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/mnt/alp/Users/Amine/Code/Principle_Radiomics/myradiomics')
+sys.path.append('')
 from data_util import NormalizeData, split_data, trimm_correlated
 from sklearn.cluster import KMeans
 from sklearn.cluster import SpectralClustering
@@ -7,12 +7,12 @@ import pandas as pd
 import numpy as np
 
 
-features_data = pd.read_csv('Data/cine_lge_t1_radiomics_4biobsy.csv')
+features_data = pd.read_csv('')
 features_data.drop('pat_id', axis=1, inplace=True)
 idx = np.nonzero(np.all(np.asarray(features_data) == 0, axis=0))[
     0]  # remove features that are all zeros in all patients
 features_data.drop(columns=features_data.columns[idx], axis=1, inplace=True)
-features_data.to_csv("Data/cine_lge_t1_radiomics_corr.csv", index=False)
+features_data.to_csv("", index=False)
 features_data = trimm_correlated(features_data, 0.80)
 print(features_data.head())
 
